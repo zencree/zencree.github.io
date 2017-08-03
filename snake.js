@@ -1,17 +1,4 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title> Snake Game </title>
-</head>
-<body>
-  <h1 style = "color:blue;"><center><font size = "15"><i>Snake!</i></font></center></h1>
-   <center style = "color:red;"><font size = "20"><i>Welcome to the world of Snakes :P</i></font></center>
-   <!-- Menu goes here -->
-    <center><font size ="6">
-      <a href= "https://zencree.github.io"> Youtube</a> | <a href = "https://zencree.github.io/calculus.html">Calculus</a> | <a href ="https://zencree.github.io/dfq.html">
-      Differential Equations</a> | <b>Snake Game </b> </font></center>
-   <!-- Menu ends here -->
       <canvas id ="gc" width ="400" height ="400"></canvas>
       <script>
         window.onload=function() {
@@ -81,32 +68,3 @@
           }
         }
       </script>
-  <script>
-var day;
-switch (new Date().getDay()) {
-    case 0:
-        day = "Sunday";
-        break;
-    case 1:
-        day = "Monday";
-        break;
-    case 2:
-        day = "Tuesday";
-        break;
-    case 3:
-        day = "Wednesday";
-        break;
-    case 4:
-        day = "Thursday";
-        break;
-    case 5:
-        day = "Friday";
-        break;
-    case  6:
-        day = "Saturday";
-}
-document.getElementById("demo").innerHTML = "Today is " + day;
-</script>
-
-</body>
-</html>
