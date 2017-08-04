@@ -7,8 +7,22 @@
       border:#000000 1px solid;
     }
   </style>
+  <script>
+    var c 
+    var ctx;
+    function init(){
+    c = document.getElementById('myCanvas');
+     ctx = c.getContext('2d');
+      draw();
+    }
+    
+    function draw(){
+      ctx.fillStyle="#ff0000";
+      ctx.fillRect(30,30,50,50);
+    }
+  </script>
 </head>
-<body>
+<body onload= "init()" >
   <h1 style = "color:blue;"><center><font size = "15"><i>Snake!</i></font></center></h1>
    <center style = "color:red;"><font size = "20"><i>Welcome to the world of Snakes :P</i></font></center>
    <!-- Menu goes here -->
