@@ -1,8 +1,9 @@
 $(document).ready(function() {
    //Define Vars
-  var canvas =$('#canvas')[0];
+  //var canvas =$('#canvas')[0];
+   var canvas = document.createElement("canvas");
   var ctx = canvas.getContext("2d");
-  //var w = canvas.width();
+  var w = canvas.width();
   var h = canvas.height();
   var cw = 15;
   var d = "right";
