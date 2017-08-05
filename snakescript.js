@@ -39,7 +39,7 @@ $(document).ready(function() {
   function create_food(){
    food = {
      x:Math.round(Math.random()*(w-cw)/cw),
-     y:Math.round(Math.random()*(h-cw)/cw)
+     y:Math.round(Math.random()*(h-cw)/cw);
    };
   }
   
@@ -81,7 +81,7 @@ $(document).ready(function() {
       var c = snake_array[i];
       paint_cell(c.x,c.y);
     }
-  
+  //Paint Cell
     paint_cell(food.x,food.y);
        //Check Score
       checkscore(score);
