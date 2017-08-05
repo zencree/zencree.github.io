@@ -87,7 +87,7 @@ $(document).ready(function() {
       checkscore(score);
   }  
    function paint_cell(x,y){
-      ctx.filStyle=color;
+      ctx.fillStyle=color;
       ctx.fillRect(x*cw, y*cw, cw, cw);
       ctx.strokeStyle= "white";
       ctx.strokeRect(x*cw, y*cw, cw, cw);
