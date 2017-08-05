@@ -39,8 +39,8 @@ $(document).ready(function() {
   function create_food(){
    food = {
      x:Math.round(Math.random()*(w-cw)/cw),
-     y:Math.round(Math.ramdom()*(h-cw)/cw),
-   }
+     y:Math.round(Math.ramdom()*(h-cw)/cw);
+   };
   }
   
   
@@ -61,7 +61,7 @@ $(document).ready(function() {
     else if(d == 'down') ny++;
   
    //Collide code 
-  if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw || check_collision(ns, ny, snake_array)) {
+  if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw || check_collision(nx, ny, snake_array)) {
     init();
     
     return;
@@ -81,7 +81,7 @@ $(document).ready(function() {
       var c = snake_array[i];
       paint_cell(c.x,c.y);
     }
-    
+  
     paint_cell(food.x,food.y);
        //Check Score
       checkscore(score);
