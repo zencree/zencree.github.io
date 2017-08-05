@@ -1,6 +1,6 @@
 $(document).ready(function() {
    //Define Vars
-  var canvas =$document.getElementById('mycanvas')[0];
+  var canvas =$('#canvas')[0];
   var ctx = canvas.getContext("2d");
   var w = canvas.width();
   var h = canvas.height();
