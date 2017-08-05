@@ -53,10 +53,30 @@
       ctx.lineTo(350,90);
       ctx.stroke();
       ctx.closePath();
+   
+    }
+    var b;
+    var btx;
+    function init1(){
+      b = document.getElementByID("myCanvas1");
+      btx = c.getContext("2d");
+      draw();
+    }
+    
+    function draw1(){
+      var posX = 0;
+      var posY = 0;
+      setInterval(function() {
+        posX += 1;
+        posY += 1;
+        ctx.clearRect(0,0,c.width,c.height);
+        ctx.fillStyle="red";
+        ctx.fillRect(posX,0,50,50);
+      },30);
     }
   </script>
 </head>
-<body onload= "init()" >
+<body onload= "init(),init1()" >
   <h1 style = "color:blue;"><center><font size = "15"><i>Animations!</i></font></center></h1>
    <center style = "color:red;"><font size = "20"><i>Welcome to the world of Animations :P</i></font></center>
    <!-- Menu goes here -->
