@@ -9,7 +9,7 @@ $(document).ready(function() {
   var food;
   var score;
   var speed = 130;
-  
+  var color ="green";
   //Snake Array
   var snake_array;
   
@@ -38,7 +38,7 @@ $(document).ready(function() {
   //Create food
   function create_food(){
    food = {
-     x:Math.round(Math.random()*(w-cw)/cw),
+     x:Math.round(Math.random()*(w-cw)/cw);
      y:Math.round(Math.ramdom()*(h-cw)/cw);
    };
   }
@@ -85,5 +85,19 @@ $(document).ready(function() {
     paint_cell(food.x,food.y);
        //Check Score
       checkscore(score);
-  }                  
+  }  
+   function paint_cell(x,y){
+      ctx.filStyle=color;
+      ctx.fillRect(x*cw, y*cw, cw, cw);
+      ctx.strokeStyle= "white";
+      ctx.strokeRect(x*cw, y*cw, cw, cw);
+   }
+   
+   function check_Collision(x,y,array){
+      for(var i = ; i<array.length; i++){
+      if(array[i.x == x && array[i].y == y])
+         return true
+      }
+      return false;
+   }
 });
