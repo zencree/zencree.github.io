@@ -1,1 +1,22 @@
+body{
+
+}
+
+a{
+  color#ffffff;
+  text-declaration:none;
+  
+}
+
+canvas{
+  background:#000000;
+  border:1px #ffffff solid;
+
+.container{
+  margin:30px auto 0 auto;
+  width:600px;
+  overflow:auto;
+  position:relative;
+  
+}
 
