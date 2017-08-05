@@ -69,9 +69,14 @@
       setInterval(function() {
         posX += 1;
         posY += 1;
-        btx.clearRect(0,0,b.width,b.height);
-        btx.fillStyle="red";
-        btx.fillRect(posX,0,50,50);
+      
+        btx.fillStyle="black";
+        btx.fillRect(0,0,50,50);
+        
+        btx.fillStyle="white";
+        btx.beginPath();
+        btx.arc(posX,120,55,0,Math.PI*2);
+        btx.fill();
       },30);
     }
   </script>
