@@ -30,3 +30,14 @@ canvas{
    margin-bottom:5px;
    overflow:auto;
 
+  }
+  .score{
+   width:25%;
+    height:50px;
+    padding-top:20px;
+    float:left;
+    margin-right:5px;
+    overFlow:auto;
+    background:#000000;
+    text-alignment:center;
+  }
