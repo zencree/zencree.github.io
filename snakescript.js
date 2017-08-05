@@ -39,7 +39,7 @@ $(document).ready(function() {
   function create_food(){
    food = {
      x:Math.round(Math.random()*(w-cw)/cw),
-     y:Math.round(Math.random()*(h-cw)/cw);
+     y:Math.round(Math.random()*(h-cw)/cw)
    }
   }
   
