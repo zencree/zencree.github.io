@@ -56,3 +56,13 @@ canvas{
     top:170px;
     left:180px;
   }
+#overlay a{
+  display:block;
+  margin-top:10px;
+  padding:10px;
+  background:#666666;
+}
+#overlay a:hover{
+ background:#333333;
+
+}
