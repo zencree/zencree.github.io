@@ -26,7 +26,17 @@
       
       //Draw Black Square
       ctx.fillStyle="#000000";
-      ctx.fillRect(40,45,50,50);
+      ctx.fillRect(40,40,50,50);
+      
+      //Draw Text
+      ctx.font = '30pt Arial';
+      //Create Gradient
+      var gradient = ctx.createLinearGradient(0,0,c.width,0);
+      gradient.addColorStop("0","red");
+      gradient.addColorStop("1","black");
+      //Fill Text With Gradient
+      ctx.fillStyle=gradient;
+      ctx.fillText("My Company",100,80);
     }
   </script>
 </head>
