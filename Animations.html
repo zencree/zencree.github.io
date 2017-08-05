@@ -59,7 +59,7 @@
     var btx;
     function init1(){
       b = document.getElementByID("myCanvas1");
-      btx = c.getContext("2d");
+      btx = b.getContext("2d");
       draw1();
     }
     
@@ -69,7 +69,7 @@
       setInterval(function() {
         posX += 1;
         posY += 1;
-        btx.clearRect(0,0,c.width,c.height);
+        btx.clearRect(0,0,b.width,b.height);
         btx.fillStyle="red";
         btx.fillRect(posX,0,50,50);
       },30);
