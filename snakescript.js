@@ -94,7 +94,7 @@ $(document).ready(function() {
    }
    
    function check_collision(x,y,array){
-      for(var i = ; i<array.length; i++){
+      for(var i = 0; i<array.length; i++){
       if(array[i.x == x && array[i].y == y])
          return true
       }
