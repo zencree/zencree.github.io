@@ -69,7 +69,8 @@ $(document).ready(function() {
     //Insert Final Score
      $('#final_score').html(score);
      //Show Overlay
-     $('#overlay').fadeIn(300);
+     //$('#overlay').fadeIn(300);
+       document.getElementById('overlay').innerHTML = "Score: " + score;
     return;
   }
     if(nx == food.x && ny == food.y){
