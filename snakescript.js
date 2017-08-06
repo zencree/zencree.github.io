@@ -4,7 +4,7 @@ $(document).ready(function() {
   var ctx = canvas.getContext("2d");
   var w = 600;
       //canvas.width();
-  var h =400;
+  var h =450;
       //canvas.height();
   var cw = 15;
   var d = "right";
@@ -65,7 +65,7 @@ $(document).ready(function() {
   
    //Collide code 
   if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw || check_collision(nx, ny, snake_array)) {
-    init();
+    //init();
     
     return;
   }
