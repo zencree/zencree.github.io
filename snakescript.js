@@ -66,7 +66,10 @@ $(document).ready(function() {
    //Collide code 
   if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw || check_collision(nx, ny, snake_array)) {
     //init();
-    
+    //Insert Final Score
+     $('#final_score').html(score);
+     //Show Overlay
+     $('#overlay').fadeIn(300);
     return;
   }
     if(nx == food.x && ny == food.y){
