@@ -91,6 +91,9 @@ $(document).ready(function() {
     paint_cell(food.x,food.y);
        //Check Score
       checkscore(score);
+     
+     //Display Current Score 
+     
   }  
    function paint_cell(x,y){
       ctx.fillStyle=color;
