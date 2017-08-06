@@ -2,7 +2,7 @@ $(document).ready(function() {
    //Define Vars
  var canvas =$('#canvas')[0];
   var ctx = canvas.getContext("2d");
-  var w = 500;
+  var w = 600;
       //canvas.width();
   var h =500;
       //canvas.height();
