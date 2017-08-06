@@ -110,7 +110,7 @@ $(document).ready(function() {
       return false;
    }
    function checkscore(score) {
-      if(localStorage.getItem('highscore' == null) {
+      if(localStorage.getItem('highscore') == null {
          // If there is no high score
          localStorage.setItem('highscore',score);
          }
