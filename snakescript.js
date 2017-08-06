@@ -122,7 +122,7 @@ $(document).ready(function() {
                localStorage.setItem('highscore', score);
             }
          }
-      $('high_score').html('High Score ' + localStorage.highscore);
+      $('#high_score').html('High Score ' + localStorage.highscore);
    } 
     //Keyboard Controller
    $(document).keydown(function(e){
@@ -133,3 +133,9 @@ $(document).ready(function() {
    else if(key == "40" && d!= "up") d ="down";
    });
 });
+function resetScore() {
+   localStorage.highscore = 0;
+   //Display High Score
+   highscorediv = document.getElementById('high_score');
+   highscorediv.innerHTML = 'High Score: 0';
+}
