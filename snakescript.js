@@ -90,10 +90,10 @@ $(document).ready(function() {
   //Paint Cell
     paint_cell(food.x,food.y);
        //Check Score
-      checkscore(score);
+     // checkscore(score);
      
      //Display Current Score 
-     
+     $('score').html('Your Score: ' +score);
   }  
    function paint_cell(x,y){
       ctx.fillStyle=color;
