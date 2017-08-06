@@ -17,6 +17,7 @@ $(document).ready(function() {
   
   //Initializer
   function init() {
+     d ="right";
     create_snake();
     create_food();
     score = 0;
