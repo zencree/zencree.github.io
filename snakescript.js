@@ -93,7 +93,7 @@ $(document).ready(function() {
       checkscore(score);
      
      //Display Current Score 
-     $('score')snake.html('Your Score: ' +score);
+     $('score').html('Your Score: ' +score);
   }  
    function paint_cell(x,y){
       ctx.fillStyle=color;
@@ -108,6 +108,19 @@ $(document).ready(function() {
          return true
       }
       return false;
+   }
+   function checkscore(score) {
+      if(localStorage.getItem('highscore' == null) {
+         // If there is no high score
+         localStorage.setItem('highscore',score);
+         }
+         else{
+         //If there is a high score
+            if(score > localStorage.getItem('highscore')) {
+               localStorage.setItem('highscore', score);
+            }
+         }
+      $('high_score').html('High Score ' + localStorage.highScore);
    }
     //Keyboard Controller
    $(document).keydown(function(e){
