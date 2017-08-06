@@ -122,7 +122,7 @@ $(document).ready(function() {
                localStorage.setItem('highscore', score);
             }
          }
-      $('#high_score').html('High Score ' + localStorage.highscore);
+      $('#high_score').html('High Score: ' + localStorage.highscore);
    } 
     //Keyboard Controller
    $(document).keydown(function(e){
