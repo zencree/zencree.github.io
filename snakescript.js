@@ -91,7 +91,7 @@ $(document).ready(function() {
   //Paint Cell
     paint_cell(food.x,food.y);
        //Check Score
-      //checkscore(score);
+      checkscore(score);
      
      //Display Current Score 
      $('#score').html('Your Score: ' +score);
@@ -111,8 +111,8 @@ $(document).ready(function() {
       }
       return false;
    }
-  /* function checkscore(score) {
-      if(localStorage.getItem('highscore') == null {
+   function checkscore(score) {
+      if(localStorage.getItem('highscore') === null) {
          // If there is no high score
          localStorage.setItem('highscore',score);
          }
@@ -122,8 +122,8 @@ $(document).ready(function() {
                localStorage.setItem('highscore', score);
             }
          }
-      $('high_score').html('High Score ' + localStorage.highScore);
-   } */
+      $('high_score').html('High Score ' + localStorage.highscore);
+   } 
     //Keyboard Controller
    $(document).keydown(function(e){
    var key = e.which;    
