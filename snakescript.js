@@ -93,7 +93,8 @@ $(document).ready(function() {
       checkscore(score);
      
      //Display Current Score 
-     $('score').html('Your Score: ' +score);
+    // $('score').html('Your Score: ' +score);
+     document.getElementById('score').innerHTML = "Score: " + score;
   }  
    function paint_cell(x,y){
       ctx.fillStyle=color;
