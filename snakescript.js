@@ -69,8 +69,8 @@ $(document).ready(function() {
     //Insert Final Score
      $('#final_score').html(score);
      //Show Overlay
-     //$('#overlay').fadeIn(300);
-       document.getElementById('overlay').innerHTML = "Score: " + score;
+     $('#overlay').fadeIn(300);
+ 
     return;
   }
     if(nx == food.x && ny == food.y){
@@ -94,8 +94,8 @@ $(document).ready(function() {
       checkscore(score);
      
      //Display Current Score 
-    // $('score').html('Your Score: ' +score);
-     document.getElementById('score').innerHTML = "Score: " + score;
+     $('#score').html('Your Score: ' +score);
+     
   }  
    function paint_cell(x,y){
       ctx.fillStyle=color;
