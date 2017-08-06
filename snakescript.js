@@ -93,7 +93,7 @@ $(document).ready(function() {
       checkscore(score);
      
      //Display Current Score 
-     $('score').html('Your Score: ' +score);
+     $('score')snake.html('Your Score: ' +score);
   }  
    function paint_cell(x,y){
       ctx.fillStyle=color;
