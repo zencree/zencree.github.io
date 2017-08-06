@@ -4,7 +4,7 @@ $(document).ready(function() {
   var ctx = canvas.getContext("2d");
   var w = 600;
       //canvas.width();
-  var h =500;
+  var h =300;
       //canvas.height();
   var cw = 15;
   var d = "right";
