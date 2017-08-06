@@ -109,7 +109,7 @@ $(document).ready(function() {
       }
       return false;
    }
-   function checkscore(score) {
+  /* function checkscore(score) {
       if(localStorage.getItem('highscore') == null {
          // If there is no high score
          localStorage.setItem('highscore',score);
@@ -121,7 +121,7 @@ $(document).ready(function() {
             }
          }
       $('high_score').html('High Score ' + localStorage.highScore);
-   }
+   } */
     //Keyboard Controller
    $(document).keydown(function(e){
    var key = e.which;    
