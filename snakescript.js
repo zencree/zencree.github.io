@@ -1,10 +1,11 @@
 $(document).ready(function() {
    //Define Vars
-  //var canvas =$('#canvas')[0];
-   var canvas = document.createElement("canvas");
+ var canvas =$('#canvas')[0];
   var ctx = canvas.getContext("2d");
-  var w = canvas.width();
-  var h = canvas.height();
+  var w = 500;
+      //canvas.width();
+  var h =500;
+      //canvas.height();
   var cw = 15;
   var d = "right";
   var food;
