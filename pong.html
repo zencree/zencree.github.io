@@ -40,7 +40,10 @@
         y: null,
         width: 20,
         height: 100,
-        update: function() {},
+        update: function() {
+          var desty = ball.y - (this.height - ball.side)*0.5;
+          this.y = desty;
+        },
        draw: function(){
       ctx.fillRect(this.x,this.y, this.width, this.height);
         }
