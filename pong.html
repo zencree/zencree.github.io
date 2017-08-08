@@ -77,6 +77,17 @@
             this.vel.x = smash*(pdle===player ? 1 : -1)*this.speed*Math.cos(phi);
               this.vel.y = smash*this.speed*Math.sin(phi);
           }
+          
+          if(0 > this.x + this.side || this.x > WIDTH) {
+              
+        ball.x =(WIDTH - ball.side)/2;
+        ball.y =(HEIGHT - ball.side)/2;
+        
+        ball.vel = {
+          x: ball.speed,
+          y: 0
+        }
+          }
         },
        draw: function(){
       ctx.fillRect(this.x,this.y, this.side, this.side);
