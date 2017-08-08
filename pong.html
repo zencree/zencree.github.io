@@ -61,7 +61,7 @@
           this.y = (HEIGHT - this.side)*r;
           
           var phi = 0.1*pi*(1-2*r);
-          this.vel =
+          this.vel = {
             x: side*this.speed*Math.cos(phi),
             y: this.speed*Math.sin(phi)
         }
