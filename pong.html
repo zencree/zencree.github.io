@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>Pong</title>
+    <style>
+      canvas{
+        position: absolute;
+        margin: auto;
+        top:0;
+        bottom: 0;
+        left:0;
+        right:0;
+      }
+    </style>
   </head>
   <body>
     <script>
@@ -40,14 +50,14 @@
         y: null,
         vel: null,
         side: 20,
-        speed: 50,
+        speed: 5,
         update: function() {
         this.x += this.vel.x;
         this.y += this.vel.y;
           
           if(0 > this.y || this.y+this.side > HEIGHT) {
             var offset = this.vel.y < 0 ? 0 - this.y : HEIGHT-(this.y+this.side);
-         this.y += offset;
+         this.y += 2*offset;
             this.vel.y *= -1;
           }
         },
