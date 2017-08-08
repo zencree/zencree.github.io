@@ -47,7 +47,7 @@
           
           if(0 > this.y || this.y+this.side > HEIGHT) {
             var offset = this.vel.y < 0 ? 0 - this.y : HEIGHT-(this.y+this.side);
-         this.vel.y *= -1;
+         this.y += offset;
             this.vel.y *= -1;
           }
         },
