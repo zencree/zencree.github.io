@@ -30,7 +30,7 @@
         update: function() {
         if(keystate[UpArrow]) this.y -= 7;
          if(keystate[DownArrow]) this.y += 7;
-          this.y = Math.max*Math.min(this.y, HEIGHT - this.height ), 0);
+          this.y = Math.max(Math.min(this.y, HEIGHT - this.height ), 0);
         },
         draw: function(){
       ctx.fillRect(this.x,this.y, this.width, this.height);
