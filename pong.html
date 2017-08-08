@@ -84,7 +84,7 @@
         ball.y =(HEIGHT - ball.side)/2;
         
         ball.vel = {
-          x: ball.speed,
+          x: (pdle===player ? 1 : -1)*ball.speed,
           y: 0
         }
           }
