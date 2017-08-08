@@ -42,7 +42,7 @@
         height: 100,
         update: function() {
           var desty = ball.y - (this.height - ball.side)*0.5;
-          this.y = desty;
+          this.y = (desty - this.y) * 0.2;
         },
        draw: function(){
       ctx.fillRect(this.x,this.y, this.width, this.height);
